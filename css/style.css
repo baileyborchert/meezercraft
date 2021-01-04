@@ -1,0 +1,187 @@
+/* Styles used for all pages */
+body {
+    background-image: linear-gradient(225deg, rgba(191,169,250,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+}
+
+.container {
+    background-color: #333333;
+    background-clip: content-box;
+    border-radius: 100px;
+}
+
+.container-fluid {
+    padding: 2em 0 0 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    max-width: 850px;
+    background-color: #333333;
+    border-radius: 1em;
+}
+
+/* For styling headers */
+h1 {
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* For styling cards */
+p, .card-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4em;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: 'Quicksand', sans-serif;
+    margin: 1em;
+}
+
+/* For styling links */
+a {
+    color:#C7E8FF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color:#bfa9fa;
+    text-decoration: underline;
+    animation: color-change 1.5s infinite;
+}
+
+/* For list items - affects both card text and nav items */
+li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4em;
+    margin: 0 1.5em .5em 1.5em;
+}
+
+/* For header */
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(3px 3px 3px #222222);
+    filter: drop-shadow(3px 3px 3px #222222);
+    transition: transform .25s ease;
+}
+#logo:hover {
+    transform: scale(.95);
+}
+
+.nav-item {
+    margin: 0 0.5em 1em 0.5em;
+}
+.nav-link {
+    font-size: 1.4em;
+    border: 1px solid #999999;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #444444;
+    transition: transform .15s ease;
+}
+.nav-link:hover {
+    transform: scale(.9);
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #bfa9fa; }
+    50% { color: #C7E8FF; }
+    100% { color: #bfa9fa; }
+  }
+
+/* For footer */
+#footer {
+    display: block;
+    background-color: #444444;
+    padding: 1.3em;
+    border-radius: 0 0 1em 1em;
+    margin-top: 1em;
+}
+
+#footer .nav-link img {
+    height: 1.8em;
+    width: 1.8em;
+    position: relative;
+    display: block;
+}
+
+#footer .nav-item {
+    margin: .5em;
+}
+#footer .nav-link {
+    border: 1px solid #C7E8FF;
+    border-radius: 50%;
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+/* For home page carousel */
+
+.carousel {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.carousel-inner img {
+    height: 40vh;
+}
+
+/* ------------------------ */
+/* For "our team" page */
+.card {
+    border: none;
+    border-radius: 0;
+    background-color: #333333;
+}
+
+.card-body {
+    margin: 0 1em 0 1em;
+    margin-bottom: 0;
+}
+
+.card-text, .card-title {
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Creates the top border for each staff card */
+.head {
+    display: block;
+    background-color: #bfa9fa;
+    opacity: 80%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* Flips BB's Minecraft head to look left */
+#bb-head {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.player-head {
+    border-radius: 50%;
+    padding: 1em;
+    background-color: #C7E8FF;
+    margin-right: 2em;
+    margin-left: 2em;
+}

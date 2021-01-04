@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MeezerCraft ♡ Info</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- top nav bar -->
+    <div id="navigation"></div>
+    <script>
+        $(function(){
+            $('#navigation').load('navigation.html');
+
+        });
+    </script>
+    <!-- info card-->
+    <div class="card">
+        <div class="card-body" style="padding-bottom: 0;">
+            <h1>Game Info</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">
+                    <ul>
+                        <li>The map is 30k x 30k blocks.</li>
+                        <li>Creeper explosions and fire spread are disabled to protect builds, but both still deal player damage.</li>
+                        <li>You lose items on death. Gravestones prevent them from despawning or being looted.</li>
+                        <li>PVP is enabled.</li>
+                        <li>Difficulty is normal.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Plugins</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <i>Note:</i> This is not all-inclusive! There are other plugins installed for admin use, but these are the ones that players will directly interact with in-game through commands.
+                    <ul>
+                        <li><b>The New Economy</b> - Stores balances for the player economy.</li>
+                        <li><b>BetterRTP</b> - Random teleport command.</li>
+                        <li><b>ColorName</b> - Allows you to change the color of your username.</li>
+                        <li><b>EasyWarp</b> - Warp to events and different places around spawn.</li>
+                        <li><b>Harbor</b> - Speeds up the night if 50% of players in the overworld are in bed.</li>
+                        <li><b>Jobs</b> - Join up to three jobs to generate income.</li>
+                        <li><b>LWC</b> - Configure locks on chests, furnaces, and other “use” items to protect them within your base.</li>
+                        <li><b>QuickShop</b> - Buy and sell items in the player economy with shop chests.</li>
+                        <li><b>SetHome</b> - Set a home to teleport to your base at any time.</li>
+                        <li><b>SimpleTpa</b> - Send teleport requests to other players.</li>
+                        <li><b>UltimateTimber</b> - Easy tree-chopping!</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+        <!-- footer -->
+        <div id="footer"></div>
+        <script>
+            $(function(){
+                $('#footer').load('footer.html');
+    
+            });
+        </script>
+</div>
+</body>
+</html>

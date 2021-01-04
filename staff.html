@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MeezerCraft ♡ Staff</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- top nav bar -->
+    <div id="navigation"></div>
+    <script>
+        $(function(){
+            $('#navigation').load('navigation.html');
+
+        });
+    </script>
+    <!-- info card-->
+    <div class="card">
+      <div class="card-body">
+        <h1>F.A.Q.</h1>
+      </div>
+      <div class="card-body">
+            <p>Our staff team currently consists of three admins, who founded the server together, and two moderators. We all volunteer our time to work together as a remote team, bringing our dream Minecraft server to life!</p>
+      </div>
+    </div>
+    <!-- info cards about team members-->
+    <div class="card team-card">
+      <div class="card-body">
+        <div class="head">
+          <img src="https://cravatar.eu/helmhead/bunmaid/190.png" class="player-head" alt="Autumn's Minecraft head" style="float:left">
+        </div>
+        <h5 class="card-title">♡ bunmaid ♡</h5>
+        <p class="card-text">Hello! I’ve been playing Minecraft since its official launch in 2011. My role in the team covers the social end of things, like player moderation, event planning, and social media management.</p>
+      </div>
+    </div>
+    <div class="card team-card">
+      <div class="card-body">
+        <div class="head">
+          <img src="https://cravatar.eu/helmhead/lycheegrl/190.png" class="player-head" id="bb-head" alt="BB's Minecraft head" style="float:right">
+        </div>
+        <h5 class="card-title">♡ lycheegrl ♡</h5>
+        <p class="card-text">Hello! I first experienced Minecraft in 2013, but 2019 was when I really started to get into it. My role within our team is a mix of backend server configuration, project management, and taking on coding projects like this website.</p>
+      </div>
+    </div>
+    <div class="card team-card">
+      <div class="card-body">
+        <div class="head">
+          <img src="https://cravatar.eu/helmhead/thicccbee/190.png" class="player-head" alt="Hailey's Minecraft head" style="float:left">
+        </div>
+        <h5 class="card-title">♡ thicccbee ♡</h5>
+        <p class="card-text">Hi! I've been playing on Minecraft since 2014. I help out with the technical side of things and do a lot of our in-game building, including our player market and spawn.</p>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $('#footer').load('footer.html');
+
+        });
+    </script>
+</div>
+</body>
+</html>
