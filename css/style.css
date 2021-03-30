@@ -143,6 +143,65 @@ li {
 .carousel-inner img {
     height: 40vh;
 }
+/* ------------------------ */
+/* For the whitelist google form*/
+
+form {
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.form-check {
+    margin-left: 2em;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+  }
+  
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #bfa9fa;
+  }
+
+  /* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.overflow-auto {
+    width: 100%;
+    height: 33em;
+    padding: 1.5em 3em 0 3em;
+    background: rgb(68, 68, 68, 30%);
+    overflow: hidden;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+}
 
 /* ------------------------ */
 /* For "our team" page */

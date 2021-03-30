@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/whitelist.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -24,17 +25,114 @@
     </script>
     <!-- info card-->
     <div class="card">
-        <div class="card-body" style="padding-bottom: 0;">
-            <h1>Join Us!</h1>
-        </div>
         <div class="card">
             <div class="card-body">
-                <p class="card-text">
-                    Interested in joining the fun? Joining our <a href="https://discord.gg/jK7XH5HBzC" target="_blank">Discord server</a> is the first step in the process of being whitelisted. Read through our <b>#info-and-rules</b> channel for the other steps!
-                </p>
+                <form id="whitelist">
+                <div class="tab">
+                    <div class="card-body" style="padding-bottom: 0;">
+                        <h1>Join Us!</h1>
+                    </div>
+                    <p>Wanna join the fun? To begin our whitelist process, submit this application, join our <a href="https://discord.gg/jK7XH5HBzC" target="_blank">Discord</a>, and notify staff through a help ticket.</p>
+                    <p><strong>Your app will be ignored if you don't make a help ticket. This is required!</strong></p>
+                </div>
+                <div class="tab overflow-auto">
+                    <h2>Discord & Social Rules</h2><br>
+                        <ul>
+                            <li style="margin-right:0; margin-left: 0;"><b>Don't join if you're not 20+!</b></li>
+                            <li style="margin-right:0; margin-left: 0;">Respect one another and keep things civil.</li>
+                            <li style="margin-right:0; margin-left: 0;">Cursing is fine, but don't use derogatory language, i.e. racial or anti-LGBT slurs.</li>
+                            <li style="margin-right:0; margin-left: 0;">In general, don't be racist, sexist, homophobic, transphobic, etc.</li>
+                            <li style="margin-right:0; margin-left: 0;"><b>No NSFW,</b> i.e. photos or conversations of graphic nudity, violence, sex, and hate symbols.</li>
+                            <li style="margin-right:0; margin-left: 0;">Have your in-game name in your Discord display name, so we know who you are!</li>
+                        </ul>
+                    <br><br>
+                    <h2>In-Game Rules</h2><br>
+                        <ul>
+                            <li style="margin-right:0; margin-left: 0;">The Discord rules apply as well.</li>
+                            <li style="margin-right:0; margin-left: 0;"><b>No</b> griefing - this is an <b>immediate ban.</b></li>
+                            <li style="margin-right:0; margin-left: 0;"><b>No</b> client-side mods or other tools that give you an unfair advantage.</li>
+                            <li style="margin-right:0; margin-left: 0;"><b>No</b> AFK methods (pools, jumping, etc.).</li>
+                            <li style="margin-right:0; margin-left: 0;"><b>No</b> redstone contraptions that cause server-side lag.</li>
+                            <li style="margin-right:0; margin-left: 0;">Builds may not contain NSFW imagery or hate symbols.</li>
+                            <li style="margin-right:0; margin-left: 0;">Build at least 10 chunks away from another player.</li>
+                            <li style="margin-right:0; margin-left: 0;">Build at least 20 chunks away from spawn.</li>
+                        </ul>
+                    <br><hr><br>
+                    <div class="form-group">
+                        <p>It's every player's responsibility to understand and follow our rules. They're also posted in our Discord server in the <i>#info-and-rules</i> channel to easily refer back to. *</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label" for="defaultCheck1">
+                            <p>I understand and agree.</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Being on this server is a privilege, <u>not</u> a right, and staff reserves the right to permanently remove you from the server at any time for any reason. We don't take the time to issue multiple warnings/"strikes" or suspensions. *</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label" for="defaultCheck1">
+                            <p>I understand and agree.</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>MeezerCraft being an adult server does <u>not</u> make it acceptable to post NSFW content, or use this as an "e-dating" server. *</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label" for="defaultCheck1">
+                            <p>I understand and agree.</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>What's your Discord username? Include the '#0000' at the end. *</p></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>What's your Minecraft username? *</p></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>How old are you? *</p></label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>Share anything else you'd like us to know about you! This is just for fun and can be personal or Minecraft-related. ♥ *</p></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>Where did you hear about MeezerCraft?</p></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"><p>If referred by a player or players currently on the server, who referred you?</p></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" oninput="this.className = ''" required>
+                    </div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" class="btn btn-dark" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                        <button type="button" class="btn btn-dark" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+                </form>
+
             </div>
         </div>
     </div>
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+    </script>
 <!-- footer -->
 <div id="footer"></div>
 <script>
