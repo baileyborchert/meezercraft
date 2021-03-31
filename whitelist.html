@@ -27,7 +27,7 @@
     <div class="card">
         <div class="card">
             <div class="card-body">
-                <form id="whitelist">
+                <form id="whitelist" action="">
                 <div class="tab">
                     <div class="card-body" style="padding-bottom: 0;">
                         <h1>Join Us!</h1>
@@ -90,33 +90,33 @@
                     <h1>Whitelist Form</h1><br>
                     <div class="form-group text-form-group">
                         <label for="discordUser"><p>What's your Discord username? Include the '#0000' at the end. *</p></label>
-                        <input type="text" class="form-control" id="discordUser" required>
+                        <input type="text" class="form-control" id="discordUser" name="discordUser" required>
                     </div><br>
                     <div class="form-group text-form-group">
                         <label for="minecraftUser"><p>What's your Minecraft username? *</p></label>
-                        <input type="text" class="form-control" id="minecraftUser" required>
+                        <input type="text" class="form-control" id="minecraftUser" name="minecraftUser" required>
                     </div><br>
                     <div class="form-group text-form-group">
                         <label for="age"><p>How old are you? *</p></label>
-                        <input type="number" class="form-control" id="age" required>
+                        <input type="number" class="form-control" id="age" name="age" required>
                     </div><br>
                     <div class="form-group text-form-group">
                         <label for="extraInfo"><p>Share anything else you'd like us to know about you! This is just for fun and can be personal or Minecraft-related. ♥ *</p></label>
-                        <input type="text" class="form-control" id="extraInfo" required>
+                        <input type="text" class="form-control" id="extraInfo" name="extraInfo" required>
                     </div><br>
                     <div class="form-group text-form-group">
                         <label for="referral"><p>Where did you hear about MeezerCraft?</p></label>
-                        <input type="text" class="form-control" id="referral">
+                        <input type="text" class="form-control" id="heardAboutUs" name="heardAboutUs">
                     </div><br>
                     <div class="form-group text-form-group">
                         <label for="referralUsers"><p>If referred by another player, who referred you?</p></label>
-                        <input type="text" class="form-control" id="referralUsers">
+                        <input type="text" class="form-control" id="referral" name="referral">
                     </div>
                 </div>
                 <div style="overflow:auto;">
                     <div style="float:right;">
-                        <button type="button" class="btn btn-dark" id="prevBtn" onclick="nextPrev(-1)">Back</button>
-                        <button type="button" class="btn btn-dark" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        <button type="button" class="btn btn-light" id="prevBtn" onclick="nextPrev(-1)">« Back</button>
+                        <button type="button" class="btn btn-light" id="nextBtn" onclick="nextPrev(1)">Next »</button>
                     </div>
                 </div>
                 <!-- Circles which indicates the steps of the form: -->
